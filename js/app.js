@@ -1,4 +1,5 @@
 alert("Hello Good People")
+prompt("What is your name?")
 
 // TODO: Ask the user's name.
 
