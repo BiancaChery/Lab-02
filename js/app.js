@@ -60,22 +60,30 @@ let x;
 response = prompt("Can you guess what number I'm thinking...");
 console.log("You said: " + response);
 x = parseInt(response) 
-
 if (response > correctAnswer){
    alert("Too High");
 } else if(response < correctAnswer){
    alert("Too Low");
 }
+response = prompt("Can you guess what number I'm thinking...");
+console.log("You said: " + response);
+x = parseInt(response)
 if (response > correctAnswer){
       alert("Too High");
 } else if(response < correctAnswer){
       alert("Too Low");
 } 
+response = prompt("Can you guess what number I'm thinking...");
+console.log("You said: " + response);
+x = parseInt(response)
 if (response > correctAnswer){
    alert("Too High");
 } else if(response < correctAnswer){
    alert("Too Low");
 }
+response = prompt("Can you guess what number I'm thinking...");
+console.log("You said: " + response);
+x = parseInt(response)
 if (response > correctAnswer){
    alert("Too High");
 } else if(response < correctAnswer){
