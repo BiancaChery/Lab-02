@@ -51,3 +51,41 @@ if(answerFive === 'y' || answerFive === 'yes'){
    // console.log("Eh, wrong answer!");
    alert("Eh, wrong answer!")
 }
+
+
+let response;
+let correctAnswer = 3
+let x;
+
+response = prompt("Can you guess what number I'm thinking...");
+console.log("You said: " + response);
+x = parseInt(response) 
+
+if (response > correctAnswer){
+   alert("Too High");
+} else if(response < correctAnswer){
+   alert("Too Low");
+}
+if (response > correctAnswer){
+      alert("Too High");
+} else if(response < correctAnswer){
+      alert("Too Low");
+} 
+if (response > correctAnswer){
+   alert("Too High");
+} else if(response < correctAnswer){
+   alert("Too Low");
+}
+if (response > correctAnswer){
+   alert("Too High");
+} else if(response < correctAnswer){
+   alert("Too Low");
+} else if(x === correctAnswer){
+   alert("Yep you guessed it! Congratulations!");
+}
+
+
+response = prompt("Do you know my nicknames?");
+console.log("You said: " + response);
+const nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca'];
+console.log(nicknames);
