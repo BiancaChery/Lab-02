@@ -88,5 +88,5 @@ while(true) {
          break; 
       } else {}
       attempts2 = attempts2 + 1;
-   }
-} alert(`You guessed ${attempts2} times`)
+   }  alert(`You guessed ${attempts2} times`)
+}
