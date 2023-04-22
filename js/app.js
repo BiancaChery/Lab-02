@@ -53,47 +53,30 @@ if(answerFive === 'y' || answerFive === 'yes'){
 }
 
 
-let response;
+let response = prompt("Can you guess what number I'm thinking?")
 let correctAnswer = 3
-let x;
-
-response = prompt("Can you guess what number I'm thinking...");
-console.log("You said: " + response);
-x = parseInt(response) 
+let x = parseInt(response)
+let attempts = 0
+ 
 if (response > correctAnswer){
    alert("Too High");
 } else if(response < correctAnswer){
    alert("Too Low");
 }
-response = prompt("Can you guess what number I'm thinking...");
-console.log("You said: " + response);
-x = parseInt(response)
-if (response > correctAnswer){
-      alert("Too High");
-} else if(response < correctAnswer){
-      alert("Too Low");
-} 
-response = prompt("Can you guess what number I'm thinking...");
-console.log("You said: " + response);
-x = parseInt(response)
-if (response > correctAnswer){
-   alert("Too High");
-} else if(response < correctAnswer){
-   alert("Too Low");
+while(x !== 3) {
+   response = prompt("Can you guess what number I'm thinking?")
+   x = parseInt(response)
+   if(x === correctAnswer){
+      break;
+   } else {
+      console.log("Nope, guess again.");
+      attempts = attempts + 1
+   } 
 }
-response = prompt("Can you guess what number I'm thinking...");
-console.log("You said: " + response);
-x = parseInt(response)
-if (response > correctAnswer){
-   alert("Too High");
-} else if(response < correctAnswer){
-   alert("Too Low");
-} else if(x === correctAnswer){
-   alert("Yep you guessed it! Congratulations!");
-}
-
 
 response = prompt("Do you know my nicknames?");
 console.log("You said: " + response);
 const nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca'];
 console.log(nicknames);
+
+alert(`You guessed ${attempts} times`)
