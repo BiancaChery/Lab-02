@@ -75,20 +75,18 @@ while(x !== 3) {
 }
 
 let answer; 
-let y = nicknames
 let attempts2 = 0
+let nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca']
+let guessedCorrectly;
  
 while(true) {
    answer = prompt("Do you know my nicknames?");
    console.log("You said: " + answer);
-    if (answer = nicknames) {const nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca'];
-   console.log("nicknames");
-   (y === nicknames); {
-   answer = prompt("Great! What's another?");
-   console.log("You said " + answer);
-   nicknames = nicknames + 1;
-   console.log("nicknames: " + nicknames);
+   for(let n of nicknames) {
+      if (answer === n) {
+         (guessedCorrectly = true);
+         break; 
+      } else {}
+      attempts2 = attempts2 + 1;
    }
-   alert(`You guessed ${attempts2} times`)
-}
-}
+} alert(`You guessed ${attempts2} times`)
