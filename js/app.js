@@ -74,9 +74,21 @@ while(x !== 3) {
    } 
 }
 
-response = prompt("Do you know my nicknames?");
-console.log("You said: " + response);
-const nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca'];
-console.log(nicknames);
-
-alert(`You guessed ${attempts} times`)
+let answer; 
+let y = nicknames
+let attempts2 = 0
+ 
+while(true) {
+   answer = prompt("Do you know my nicknames?");
+   console.log("You said: " + answer);
+    if (answer = nicknames) {const nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca'];
+   console.log("nicknames");
+   (y === nicknames); {
+   answer = prompt("Great! What's another?");
+   console.log("You said " + answer);
+   nicknames = nicknames + 1;
+   console.log("nicknames: " + nicknames);
+   }
+   alert(`You guessed ${attempts2} times`)
+}
+}
