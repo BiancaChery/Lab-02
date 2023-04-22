@@ -58,11 +58,6 @@ let correctAnswer = 3
 let x = parseInt(response)
 let attempts = 0
  
-if (response > correctAnswer){
-   alert("Too High");
-} else if(response < correctAnswer){
-   alert("Too Low");
-}
 while(x !== 3) {
    response = prompt("Can you guess what number I'm thinking?")
    x = parseInt(response)
@@ -71,6 +66,11 @@ while(x !== 3) {
    } else {
       console.log("Nope, guess again.");
       attempts = attempts + 1
+      if (response > correctAnswer){
+         alert("Too High");
+      } else if(response < correctAnswer){
+         alert("Too Low");
+      }
    } 
 }
 
