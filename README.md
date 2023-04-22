@@ -10,6 +10,6 @@ This is a webpage about me and also a question quiz to see how much you know abo
 
 
 ### Lighthouse Accessibility Report Score
-
+![Lighthouse Report](./img/Lab%203-LighthouseReport.png)
 
 ### Reflections & Comments
