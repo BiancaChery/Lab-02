@@ -77,9 +77,9 @@ while(x !== 3) {
 let answer; 
 let attempts2 = 0
 let nicknames = ['BiBi', 'B-Na', 'BrancaB', 'Bedebe', 'Banca']
-let guessedCorrectly;
+let guessedCorrectly = false
  
-while(true) {
+while(guessedCorrectly === false) {
    answer = prompt("Do you know my nicknames?");
    console.log("You said: " + answer);
    for(let n of nicknames) {
@@ -87,6 +87,14 @@ while(true) {
          (guessedCorrectly = true);
          break; 
       } else {}
+   }  
       attempts2 = attempts2 + 1;
-   }  alert(`You guessed ${attempts2} times`)
+      if(guessedCorrectly === true) {
+         alert(`You got it! My nicknames are ${nicknames[0]}, ${nicknames[1]}, ${nicknames[2]}, ${nicknames[3]}, ${nicknames[4]}`);
+         break;
+   }  else if (attempts2 === 6){
+         alert(`You're out of attempts. My nicknames are ${nicknames[0]}, ${nicknames[1]}, ${nicknames[2]}, ${nicknames[3]}, ${nicknames[4]}`);
+         break;
+   }
+   alert(`You guessed ${attempts2} times`)
 }
