@@ -1,3 +1,6 @@
+'use strict';
+let totalScore = 0
+
 alert("Hello Good People")
 prompt("What is your name?")
 
@@ -10,6 +13,7 @@ let answerFive = prompt("Do I have children?") .toLowerCase()
 if(answerOne === 'y' || answerOne ==='yes'){
     // console.log("You are correct!"); 
     alert("You are correct!");
+   totalScore++
 } else { 
     // if 'n' then you are incorrect
    // console.log("Nope, wrong-o!");
@@ -19,6 +23,7 @@ if(answerOne === 'y' || answerOne ==='yes'){
 if(answerTwo === 'n' || answerTwo === 'no'){
    // console.log("You got it!");
    alert("You got it!")
+   totalScore++
 } else {
     // if 'y' then you are incorrect
    // console.log("That ain't the move!");
@@ -28,6 +33,7 @@ if(answerTwo === 'n' || answerTwo === 'no'){
 if(answerThree === 'n' || answerThree === 'no'){
    // console.log("Oh snap, that's it!");
    alert("Oh snap, that's it!");
+   totalScore++
 } else {
     //if 'y' then you are incorrect
    // console.log("Hmm, no sir!");
@@ -36,7 +42,8 @@ if(answerThree === 'n' || answerThree === 'no'){
 
 if(answerFour === 'n' || answerFour === 'no'){
    // console.log("You're learning me I see!");
-   alert("You're learning me I see!")
+   alert("You're learning me I see!");
+   totalScore++
 } else {
     // if 'y' then you are incorrect
    // console.log("Almost had it!");
@@ -46,6 +53,7 @@ if(answerFour === 'n' || answerFour === 'no'){
 if(answerFive === 'y' || answerFive === 'yes'){
    // console.log("Aye that's it!");
    alert("Aye that's it!");
+   totalScore++
 } else {
     //if 'n' then you are incorrect
    // console.log("Eh, wrong answer!");
@@ -62,7 +70,9 @@ while(x !== 3) {
    response = prompt("Can you guess what number I'm thinking?")
    x = parseInt(response)
    if(x === correctAnswer){
-      break;
+      alert("That's it!");
+      totalScore++
+         break;
    } else {
       console.log("Nope, guess again.");
       attempts = attempts + 1
@@ -85,6 +95,7 @@ while(guessedCorrectly === false) {
    for(let n of nicknames) {
       if (answer === n) {
          (guessedCorrectly = true);
+         totalScore++
          break; 
       } else {}
    }  
@@ -98,3 +109,4 @@ while(guessedCorrectly === false) {
    }
    alert(`You guessed ${attempts2} times`)
 }
+   alert(`Your total score was ${totalScore}`)
