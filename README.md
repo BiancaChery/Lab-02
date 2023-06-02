@@ -13,4 +13,5 @@ This is a webpage about me and also a question quiz to see how much you know abo
 ![Lighthouse Report](./img/Lab%203-LighthouseReport.png)
 ![Lab 5c](.img/Lab5c.png)
 ![Part 2-Lab 5c](.img/Lab5c1.png)
+
 ### Reflections & Comments
